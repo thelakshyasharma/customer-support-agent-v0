@@ -1,0 +1,1836 @@
+{
+  "conversations": [
+    {
+      "id": "conv1",
+      "customer_issue": "tracking",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I can't track my shipment"
+        },
+        {
+          "role": "agent",
+          "message": "I understand you're having trouble tracking your shipment. Have you already added this shipment to your dashboard, or are you trying to add it for the first time? As a support agent, I can guide you through the process, but I don't have direct access to your tracking data."
+        },
+        {
+          "role": "customer",
+          "message": "I don't know how to add it"
+        },
+        {
+          "role": "agent", 
+          "message": "To add a shipment, go to your dashboard and click the blue 'Add Tracking' button in the top-right corner. This will open a form where you'll need to enter: 1) Mode (Ocean/Air), 2) Carrier name from the dropdown, and 3) Container number. Once added, you'll be able to view all tracking details directly on your dashboard."
+        }
+      ]
+    },
+    {
+      "id": "conv2",
+      "customer_issue": "invalid_tracking",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I'm getting an invalid tracking number error"
+        },
+        {
+          "role": "agent",
+          "message": "I'm sorry about that error. Container numbers must be in the format of 4 letters followed by 7 digits (like MSCU1234567). Could you check if your tracking number follows this format?"
+        },
+        {
+          "role": "customer",
+          "message": "My tracking is MSC12345678"
+        },
+        {
+          "role": "agent",
+          "message": "I see the issue. Your tracking number 'MSC12345678' has only 3 letters at the beginning instead of 4, and it has 8 digits instead of 7. Please check with your shipping company for the correct format. Most container numbers should be 4 letters + 7 digits (like MSCU1234567)."
+        }
+      ]
+    },
+    {
+      "id": "conv3",
+      "customer_issue": "bulk_upload",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "How do I upload multiple shipments at once?"
+        },
+        {
+          "role": "agent",
+          "message": "To upload multiple shipments at once, you'll need to use our bulk upload feature. Have you downloaded our Excel template yet?"
+        },
+        {
+          "role": "customer",
+          "message": "No, where can I find it?"
+        },
+        {
+          "role": "agent",
+          "message": "You can download the Excel template from your dashboard. Click on the 'Bulk Upload' button, then select 'Download Template'. Once you've filled it out, return to the same section to upload the completed file."
+        }
+      ]
+    },
+    {
+      "id": "conv4",
+      "customer_issue": "pol_pod_mismatch",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: OOLU8808271 Reported Error: POL & POD available in FK as per below... Bangkok > Singapore POL: Bangkok (THBKK) POD: Singapore (SGSIN) Kindly check and update accordingly."
+        },
+        {
+          "role": "agent",
+          "message": "I understand your concern about the POL/POD mismatch for OOLU8808271. As a support agent, I don't have direct access to update tracking data in your account. I recommend checking the tracking details on your dashboard and using the Edit option to correct the ports if needed. Would you like me to guide you through that process?"
+        },
+        {
+          "role": "customer",
+          "message": "Hi, please check and help to resolve that issue"
+        },
+        {
+          "role": "agent",
+          "message": "I understand you want this resolved. While I can't directly access your tracking data, I can create a support ticket to have our technical team look into the POL/POD mismatch for OOLU8808271. In the meantime, you can also try to resolve this yourself by going to your dashboard, finding this tracking, clicking on 'More', then 'Edit', and updating the POL to Bangkok and POD to Singapore. Would you like me to create that ticket for you?"
+        },
+        {
+          "role": "customer",
+          "message": "POL Bangakok & POD is Singapore as per BOL file. Please check and track that shipment"
+        },
+        {
+          "role": "agent",
+          "message": "I've created a support ticket for the technical team to investigate the POL/POD mismatch for OOLU8808271. They'll review why your shipment from Bangkok to Singapore isn't displaying correctly. You'll receive updates via email. As a support agent, I don't have direct access to track or modify your shipment data. The team should address this within 24 hours."
+        },
+        {
+          "role": "customer",
+          "message": "ok"
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for your understanding. The ticket number is #45678. You can always check the status of your support tickets in the 'Support' section of your dashboard. Is there anything else I can help you with today?"
+        }
+      ]
+    },
+    {
+      "id": "conv5",
+      "customer_issue": "email_follow_up",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hello I have replied to the emails yesterday regarding these trackings but not yet received a reply. HASLC02250300233 HASLC02250300334 SNKO190250202448 Could you check?"
+        },
+        {
+          "role": "agent",
+          "message": "I understand you're waiting for a reply about multiple tracking numbers. Let me check the status of your email inquiry about HASLC02250300233, HASLC02250300334, and SNKO190250202448. This may take a moment."
+        },
+        {
+          "role": "agent",
+          "message": "I've checked our system and see your email was received. Our support team is currently reviewing your inquiry, but due to high volume, there's been a slight delay. I'm escalating this to ensure you get a response today. Is there any specific information about these shipments you need urgently while you wait?"
+        }
+      ]
+    },
+    {
+      "id": "conv6",
+      "customer_issue": "no_tracking_data",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I am tracking a container but there is no data"
+        },
+        {
+          "role": "agent",
+          "message": "I understand your concern about missing tracking data. Have you tried downloading the 'Invalid Report'? It shows all shipments that can't be tracked and why. You can find it by clicking 'Download Reports' in the top right corner, then selecting 'Invalid Report'."
+        },
+        {
+          "role": "customer",
+          "message": "No"
+        },
+        {
+          "role": "agent",
+          "message": "Would you like me to explain another way to check why your container isn't showing data? Or could you share the container number so I can help you more directly?"
+        },
+        {
+          "role": "customer",
+          "message": "I have 2 containers waiting their data since more than 2 days. Your colleague informed me only 24 hours for P2. I want to cancel my subscription and refund. The 2 containers now arrived. What is the benefit of your software? Nothing."
+        },
+        {
+          "role": "agent",
+          "message": "I'm really sorry for your frustration. That wait time is definitely not what we aim for. Could you share the tracking numbers so I can look into what happened specifically with your containers?"
+        },
+        {
+          "role": "customer",
+          "message": "Look the attached, still showing processing since 2 days back. I already spoke with your colleague 2 days ago long conversation and he explained to me the categories and should wait 24 hours for P2."
+        },
+        {
+          "role": "agent",
+          "message": "I see that for TEMU7518975, you selected AUTO-DETECT for the carrier. Our system has searched through major shipping lines but hasn't found tracking information yet. For EMCU9675888, let me check what's happening."
+        },
+        {
+          "role": "customer",
+          "message": "I used autodetect but your system found the shipper immediately, it was Messina Line. Even your colleague said autodetect taking 24 hours only."
+        },
+        {
+          "role": "agent",
+          "message": "You're right, and I apologize for this delay. I'm escalating both tracking numbers to our tech team right now as a priority. I'll follow up with you as soon as I have more information."
+        }
+      ]
+    },
+    {
+      "id": "conv7",
+      "customer_issue": "co2_emissions",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "My query is not listed here"
+        },
+        {
+          "role": "agent",
+          "message": "How may I help you?"
+        },
+        {
+          "role": "customer",
+          "message": "Hey Anjali I'd like to know about would like to know about CO2 emission data. Also let me know if there is any updates on the Busan port trackings."
+        },
+        {
+          "role": "agent",
+          "message": "Let me check both of these questions for you."
+        },
+        {
+          "role": "agent",
+          "message": "For the Busan port trackings you mentioned earlier, our tech team is still working on resolving those issues. I'll make sure to keep you updated on their progress."
+        },
+        {
+          "role": "agent",
+          "message": "Regarding CO2 emission data, I checked your account and found that this feature isn't currently enabled on your platform. I can have your account manager contact you about adding this feature if you'd like?"
+        }
+      ]
+    },
+    {
+      "id": "conv8",
+      "customer_issue": "multiple_tracking_issues",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Need to track my shipment"
+        },
+        {
+          "role": "agent",
+          "message": "Are you already registered on the GoComet platform?"
+        },
+        {
+          "role": "customer",
+          "message": "Yes"
+        },
+        {
+          "role": "agent",
+          "message": "In order to check the ETA and other tracking information of the shipment, kindly log in to https://www.gocomet.com/login with your registered email ID. Once you log in to the platform, you can track and check the information for your shipments."
+        },
+        {
+          "role": "customer",
+          "message": "TCNU51253330"
+        },
+        {
+          "role": "customer",
+          "message": "I need assistance about my tracking. There are lots of container who are already reached destination still data is not updated."
+        },
+        {
+          "role": "agent",
+          "message": "Please share the tracking numbers and I will look into them"
+        },
+        {
+          "role": "customer",
+          "message": "TCNU51253330, HLBU9516230, HLBU9761160, TRIU6612599, CRLU3164483, MRLU3162460 and lots more"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me a few minutes to check these numbers"
+        },
+        {
+          "role": "agent",
+          "message": "All these mentioned tracking numbers are updated as per the data provided by the respective carriers. Since we track shipments in integration with the carrier, we can only show the details once they're available on the carrier's website. Rest assured, once the carrier updates the data, it will be reflected on our platform as well. The arrival date of these tracking numbers are not updated by the carriers yet. In the case of TCNU51253330, please note that the tracking number entered is incorrect."
+        },
+        {
+          "role": "customer",
+          "message": "How I change this container no."
+        },
+        {
+          "role": "agent",
+          "message": "Please click on the three dots and select the edit option"
+        },
+        {
+          "role": "customer",
+          "message": "Done. Hapag eta and ata updated on web of my old shipments not on your web"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please share those tracking numbers? The tracking number TCNU5125330 is updated on the platform now."
+        }
+      ]
+    },
+    {
+      "id": "conv9",
+      "customer_issue": "autodetect_carrier",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I would like to inquire about the container's arrival date. ACLU5084092. According to the data, the container was delivered on March 20."
+        },
+        {
+          "role": "agent",
+          "message": "As I can see you have added the shipment on 1st april and you have selected carrier as AUTO-DETECT, so our platform went through all the major shipping line website and could not yet found the container in any shipping line, thus it is showing as processing and also in table view it is showing disptch date as 20-March. So I have raised this issue with our tech team they are checking this issue. In the meantime if you are having the carrier name please add it. Below is the way you can edit and add the carrier name if you have it with you."
+        }
+      ]
+    },
+    {
+      "id": "conv10",
+      "customer_issue": "tracking_status_bol",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "pls container position. BILL OF LADING NO- MCLNSA25002836"
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for providing the Bill of Lading number. Let me check the container position for MCLNSA25002836. Please allow me a moment to retrieve this information from our system. I notice you've provided a Bill of Lading number rather than a container number. To track using a Bill of Lading, please go to your dashboard, click 'Add Tracking' and enter this number in the tracking field. Make sure to select 'MSC' (Mediterranean Shipping Company) as the carrier since your BOL starts with 'MCL'. This will show all containers associated with this shipment."
+        }
+      ]
+    },
+    {
+      "id": "conv11",
+      "customer_issue": "api_technical_issue",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Need help with my existing tracking. I need help with fedex tracking. To this day it has not been possible to use FedEx tracking (courier type) due to the format in which the information is being sent to us. In the FedEx API, the \"locationId\" information comes, information that is not passed on to us by the JSON passed on by Gocomet. If you could send me these two pieces of information, it would solve my problem \"locationId\": \"GRUR\", \"locationType\": \"DELIVERY_LOCATION\" in json file."
+        },
+        {
+          "role": "agent",
+          "message": "I understand you're having an issue with the FedEx tracking API integration. You need specific location fields (locationId and locationType) that are currently not included in our JSON response. I'll need to communicate this with our tech team to get further information. Can I convert this conversation into an email thread and keep you updated via email? This way, our technical team can provide you with the appropriate solution for including these fields in the API response."
+        }
+      ]
+    },
+    {
+      "id": "conv12",
+      "customer_issue": "tracking_not_working",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: MEDUGD827903 Reported Error: keeps coming up as invalid but already arrived to port"
+        },
+        {
+          "role": "agent",
+          "message": "I understand you're having trouble with tracking number MEDUGD827903. The format appears unusual for a standard container number, which typically has 4 letters followed by 7 digits. Since you mentioned it has already arrived at port, there are two possibilities: 1) This might be a booking reference or Bill of Lading number rather than a container number, or 2) The carrier might be using a non-standard format. Could you confirm which shipping line/carrier is handling this shipment? This will help me check if they use a special format or if we need to track it differently in our system."
+        }
+      ]
+    },
+    {
+      "id": "conv13", 
+      "customer_issue": "tracking_information_detail",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Need help with my existing tracking. I would like to know detail information on platform. on our platform we have information \"Origin\", \" Transhipment\", i would like to know detail when you show the day for each. MSNU6524089"
+        },
+        {
+          "role": "agent",
+          "message": "I understand you want more information about when our platform updates origin and transshipment dates for tracking number MSNU6524089. For this MSC (Mediterranean Shipping Company) container, we update data every 3-6 hours as MSC is a P1-rated carrier in our system. The origin departure and transshipment dates you see are pulled directly from MSC's system and are in sync with their website. If you need more specific timing details about these updates, you can hover over each milestone in the tracking view to see the exact date and time when that information was received from the carrier."
+        }
+      ]
+    },
+    {
+      "id": "conv14",
+      "customer_issue": "incorrect_tracking_carrier",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "PLEASE TRACKIG MY SHIPMENT. CBHU8158355. monjursms@gmail.com"
+        },
+        {
+          "role": "agent",
+          "message": "I checked your tracking number CBHU8158355, but it is not available under the carrier COSCO Container Lines as entered. The prefix 'CBHU' suggests this might be a China COSCO Shipping (COSCO) or Hamburg Süd container. Please verify the tracking number and carrier name. You can edit this information by going to your dashboard, finding this tracking, clicking the three dots on the right side, and selecting 'Edit'. Make sure to select the correct carrier from the dropdown menu to ensure accurate tracking."
+        }
+      ]
+    },
+    {
+      "id": "conv15",
+      "customer_issue": "feature_inquiry",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "My query is not listed here. we are an existing customer with Gocomet. do you guys add any feature since 2023 i would like to know. we are using container tracking. its called Gotrack i believe. port tracking can we do. lfd , available date , off dock date. but i am looking port integration which is when container comes to port , provide available date , last free day ... so you still just integrate with shipping lines. and one more question can we start to track Booking number. for ex EBKG11886068 i try to track but many container comes. ok do yo uguys charge each booking number for export containers or container numbers"
+        },
+        {
+          "role": "agent",
+          "message": "You're using our GoTrack module, and yes, we do provide port congestion data which you can access at https://www.gocomet.com/real-time-port-congestion (3 weekly searches available for free with your account). Regarding tracking by booking numbers like EBKG11886068 - yes, you can enter booking numbers in the tracking field. However, since one booking may contain multiple containers (in your example, 8 containers), each container counts toward your tracking limit, not the booking itself. Currently, we don't have direct port integration for container availability dates and last free days - we still pull data primarily from shipping lines. This feature is on our roadmap but not yet available. I can connect you with your account manager to discuss specific needs for port integration."
+        }
+      ]
+    },
+    {
+      "id": "conv16",
+      "customer_issue": "mark_as_complete_error",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: EBKG10175011 Reported Error: try to mark as complete but keep popping up 'failed' message, please advise"
+        },
+        {
+          "role": "agent",
+          "message": "I've checked your tracking number EBKG10175011 and see it's already marked as completed on our platform. Sometimes there can be a delay in the status update appearing on your screen. Please try refreshing your browser or clearing your cache. If you're still seeing the 'failed' message when trying to mark it as complete, this likely means the action was actually successful but the confirmation didn't display properly. You can verify this by checking if the status shows as 'Completed' in your tracking list."
+        }
+      ]
+    },
+    {
+      "id": "conv17",
+      "customer_issue": "shipping_route_inquiry",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I hope this message finds you well. I am reaching out to inquire about the availability of a bulk carrier shipping route from the Shandong region of China—specifically from Qingdao, Tianjin, or Tangshan—to the Port of Mogadishu in Somalia. Could you please let me know if such a route is currently available? Additionally, I would appreciate it if you could provide information regarding the schedule, estimated transit time, freight rates, and any other relevant details or requirements."
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for your inquiry about shipping routes from China to Somalia. GoComet is primarily a shipment tracking and visibility platform, not a freight booking service or shipping line. We don't operate vessels or sell freight space. For information about bulk carrier routes from Shandong (Qingdao/Tianjin/Tangshan) to Mogadishu, I recommend contacting shipping lines directly or working with a freight forwarder. Would you like me to suggest some resources where you can find freight rates and route information for this specific trade lane?"
+        }
+      ]
+    },
+    {
+      "id": "conv18",
+      "customer_issue": "non_container_tracking",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "i cant track my cargo box. my cargo number is GS30572266 Gold star express Co., Ltd"
+        },
+        {
+          "role": "agent",
+          "message": "I notice you're trying to track a Gold Star Express shipment with number GS30572266. Our platform primarily focuses on ocean and air container shipments from major global carriers. Gold Star Express appears to be a specialized courier or express delivery service that isn't integrated with our system. For tracking this particular shipment, I recommend visiting Gold Star Express's official website or contacting them directly. If you need to track standard container shipments from major ocean carriers like Maersk, MSC, CMA CGM, etc., our platform can help with those."
+        }
+      ]
+    },
+    {
+      "id": "conv19",
+      "customer_issue": "inactive_tracking",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: OOLU2753441550 Reported Error: cant get data on this"
+        },
+        {
+          "role": "agent",
+          "message": "I've checked tracking number OOLU2753441550 in our system. It appears this is an OOCL (Orient Overseas Container Line) container, but there have been no updates from the carrier for the past 30 days. This usually happens when a shipment has completed its journey or when the carrier has stopped providing updates for this specific container. If you believe this shipment is still active, you can try contacting OOCL directly with this container number to get the latest status. Would you like me to mark this tracking as completed in our system, or would you prefer to keep it active?"
+        }
+      ]
+    },
+    {
+      "id": "conv20",
+      "customer_issue": "delayed_updates_spanish",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hola, llevo 3 horas esperando actualización de un embarque en la plataforma de GC y no se ve información"
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo que ha estado esperando actualizaciones de un envío en nuestra plataforma durante 3 horas sin ver información. Las actualizaciones dependen de los datos proporcionados por las navieras, que pueden tardar entre 3-24 horas según el transportista. ¿Podría compartir el número de contenedor o de seguimiento para que pueda verificar su estado específico? Así podré darle información más precisa sobre cuándo esperar la próxima actualización."
+        }
+      ]
+    },
+    {
+      "id": "conv21",
+      "customer_issue": "tracking_not_working_email_update",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: MSDU7534693 Reported Error: Why tracking not working?"
+        },
+        {
+          "role": "agent",
+          "message": "I've looked into tracking number MSDU7534693 and found some issues with accessing the data from MSC (Mediterranean Shipping Company). Let me investigate this further with our technical team to understand why the tracking isn't working properly. I'll update you via email with the detailed status and resolution for this container. In the meantime, could you share when you added this tracking to our system? This will help us troubleshoot more effectively."
+        }
+      ]
+    },
+    {
+      "id": "conv22",
+      "customer_issue": "port_congestion_data",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Port congestion data for port of vancouver"
+        },
+        {
+          "role": "agent",
+          "message": "You can access port congestion data for Vancouver through our Port Intelligence feature. Go to your dashboard and look for the 'Port Intelligence' tab, or visit https://www.gocomet.com/real-time-port-congestion directly. Enter 'Vancouver' in the search field, and you'll see current congestion levels, average wait times, and trend data. Please note that you have 3 weekly searches available with your current plan. Would you like me to guide you through finding specific metrics for the Port of Vancouver, such as vessel waiting times or berthing delays?"
+        }
+      ]
+    },
+    {
+      "id": "conv23",
+      "customer_issue": "multiple_technical_errors",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: HMMU6232575 Reported Error: GoComet is suggesting discharge port as POL. Tracking Number: HMMU6909218 Reported Error: populated factory dispatch date causes an error. this date is not provided and is autopopulated by GoComet. Unable to change it. Tracking Number: TIIU5963878 Reported Error: populated factory dispatch date causes an error. this date is not provided and is autopopulated by GoComet. Unable to change it.  Tracking Number: KOCU4893952 Reported Error: populated factory dispatch date causes an error. this date is not provided and is autopopulated by GoComet. Unable to change it."
+        },
+        {
+          "role": "agent",
+          "message": "I understand you're experiencing multiple issues with your trackings. For HMMU6232575, there appears to be a port identification error where the discharge port is incorrectly labeled as the POL (Port of Loading). For the other containers (HMMU6909218, TIIU5963878, and KOCU4893952), you're encountering errors with auto-populated factory dispatch dates that you cannot modify. These are system-level issues that require technical intervention. I'll create a ticket for our development team to address both problems. In the meantime, for the POL/discharge port issue, you can add a note to the tracking with the correct information. I'll follow up via email once our team has implemented a fix for these issues."
+        }
+      ]
+    },
+    {
+      "id": "conv24",
+      "customer_issue": "wrong_platform",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "So my gorilla tag monke plushie is in china in yun express but do you guys have the package or is it still in china my order number is YT2509521272187647"
+        },
+        {
+          "role": "agent",
+          "message": "I apologize, but it seems there's a misunderstanding. GoComet is a container shipping visibility platform for businesses tracking ocean and air freight shipments. We don't handle individual parcels or packages like your gorilla tag plushie. Your tracking number (YT2509521272187647) appears to be for YunExpress, which is a Chinese logistics company for e-commerce packages. To track your plushie, please visit the YunExpress official website (www.yunexpress.com) or check with the retailer you purchased from. They should provide the correct tracking link for your package."
+        }
+      ]
+    },
+    {
+      "id": "conv25",
+      "customer_issue": "delete_consignee",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "how can i delete 1 consignee master that i just upload. 110318 i would like to delete and re upload again"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please share the unique ID of the consignee master? Once added you can not delete the consignee master, However you can edit it. You can edit or deactivate it."
+        }
+      ]
+    },
+    {
+      "id": "conv26",
+      "customer_issue": "tracking_destination",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: MEDU7217109 Reported Error: Final destination is Toronto and you should track the shipment till deliver at Toronto Port."
+        }
+      ]
+    },
+    {
+      "id": "conv27",
+      "customer_issue": "api_error",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hi, i have integrated GoComet via your API. we have started to get the following error \"Contact support to enable create trackings with auto detect.\". Whats changed?. gocometadmin@puragen.com"
+        },
+        {
+          "role": "agent",
+          "message": "May I know your registered email id? Please allow me few minutes to look into this. Can you please share a screenshot of the error? As I have checked, auto detect feature is not currently enabled for your account. I will convert this chat conversation into an email thread and will loop in your Key Account Manager to assist you further. Yes. Thank you for the confirmation. I will convert this into an email"
+        }
+      ]
+    },
+    {
+      "id": "conv28",
+      "customer_issue": "incorrect_eta_in_api",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Need help with my existing tracking. FCIU3126902. t.nowak@vineren.com t.nowak@vinderen.com because of bad structured data in gocomet - I have wrong ETA in API. there is no ETA in event 4.0 It's only in trashipment event which I dn't care. and I have that problem very common.. FCIU3126902 99e973d9-4f79-410b-95dc-a998013f2fdc can you look at API code ? I can send you here and you will see different data tan on webise. * File attached - fc_message_1744710067592.txt *. yep but eta msc site - its visible.. you shouldchange somehing in API to have got 1 place to ETA, not on every single step of events.. it's hard t search where is exactly eta date :) how to cope with that ? eta it's tomorrow so... lack of time to show on our systems good date because msc can change POD during freight.. originally we had Gdynia but now actually it's gdansk. is your system compare more than container number with carrier system? I gueesed that only container number is imporant to get info from carrier systems."
+        },
+        {
+          "role": "agent",
+          "message": "I am sorry to hear that. Please allow me some time to check on this. Can you please share the tracking number for which you are facing the issue? okay, please allow me a moment; I am checking. As I have checked and found that as per the carrier MSC shipping line the ETA for POD Gdynia, Poland is not available only ETA available for Gdansk, Poland and the same is getting reflected on our platform. And in our platform also the carrier ETA is not available as MSC has not yet updated. As per MSC ETA for Gdansk, Poland is available that is on 16th april and the same is reflected on our platform. Okay, Please allow me some time to check this. In this shipment FCIU3126902, There is no ETA mentioned on the carrier as they have removed the previous ETA and if the ETA is not showing on platform then it will not come on API as well. so when carrier update the next ETA then you will able to access it by API. Your selected POD is Gdynia, Poland whereas MSC is showing of Gdansk, Poland; Both are different. For your selected POD Gdynia, Poland there is no ETA updated by the carrier MSC. check here we update the data as per the shipment number which you have entered on the platfrom and then as per the carrier we upadte the data so according to the carrier this shipment POD is this Gdynia, PL * File attached - img_3ga0d2h6v3_68f2e6749c2e8162685ff652e8d5c5eb7d75536d2b8b5384f1fe5ca973bfd1fe.png *"
+        }
+      ]
+    },
+    {
+      "id": "conv29",
+      "customer_issue": "shipment_complete",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: ECMU4927375 Reported Error: Shipment complete."
+        }
+      ]
+    },
+    {
+      "id": "conv30",
+      "customer_issue": "add_user_consignee_dashboard",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "i would like to add user for consignee dashborad but i can't. pls help to do it for us. consignee dasborad : Nedspice US, email : nsustraffic@nedspice.com. i delete this email for user, and would like to set this email as consignee dashboard. i did like this but it can't not. it confirm user already exist. can you help me to add this ? when it is done, pls inform me, i will add this email with new role consignee dashboard"
+        },
+        {
+          "role": "agent",
+          "message": "Do you want to add an user in the consignee master? Okay understood please allow me some time to explain you how you can add the consignee under the consignee team Nedspice US. Click on settings--> Go to Consignee masters and select the team No under company name \"Nedspice US\" click on add user then provide user name, user email, select the time zone and click on submit button and the user will be added successfully. Can you please confirm in which client team the user was previously added? The user is already added to the client team 'Nedspice US / Samantha', which is why you're unable to add them to the consignee team 'Nedspice US'. To proceed, we need to raise a migration request with our tech team to move the user to the consignee team. We'll raise the request now and keep you updated via email.  Sure, We will communicate via email."
+        }
+      ]
+    },
+    {
+      "id": "conv31",
+      "customer_issue": "eta_and_status_update",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Can you please share the ETA and status for below cargo? as per carrier they are already arrived at the Zanzibar port. BLW500000600 BLW500002100 BLW500002200 BLW500002700"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me a moment to check the mentioned tracking numbers. Okay. I will convert this conversation and will share the details regarding the mentioned tracking numbers via email."
+        }
+      ]
+    },
+    {
+      "id": "conv32",
+      "customer_issue": "view_all_shipments_on_map",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hello, How can I view all of our container shipments on a map at the same time? At the moment, I can only check one shipment on the Map View at a time. I would like to see all of our containers on the same map."
+        }
+      ]
+    },
+    {
+      "id": "conv33",
+      "customer_issue": "tracking_eta",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: NYKU5159400 Reported Error: Vessel - HMM SOUTHAMPTON Place of Receipt- LONDON, GB Port of Loading - SOUTHAMPTON, GB Port of Discharge - SINGAPORE, SG Place of Delivery - CHENNAI, IN. Container No. NYKU5159400 SHARE ETA DATE"
+        },
+        {
+          "role": "agent",
+          "message": "How may I help you. Please allow me some time to check. For tracking no NYKU5159400, ETA at POD Singapore is 9th May as per carrier One Line at the same is reflected on our platform. For detailed tracking on our platform check the below link: NYKU5159400"
+        }
+      ]
+    },
+    {
+      "id": "conv34",
+      "customer_issue": "incorrect_pod",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: CAAU5604260 Reported Error: CANADA"
+        },
+        {
+          "role": "agent",
+          "message": "Hi Snehal, For tracking no CAAU5604260 as per carrier POD is Halifax, Canada however you have added POD as Annacis Island, Canada. Please edit the shipment and change the POD to Halifax, Canada. Please follow the below steps: Click on edit button. Change the POD and click on Submit"
+        }
+      ]
+    },
+    {
+      "id": "conv35",
+      "customer_issue": "shipment_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "DJA1280895 please confirm the status of this shipment. Also, confirm from where you are getting Planned transit time for our shipments? is it from Shipping line directly?. please share these information on email. Also, please confirm the arrival status of these shipments As per carrier these are already arrive at the final port of discharge, but the Go comet port is not updated. BLW500000600 BLW500002100 BLW500002200 BLW500002700 DJA1281157 DJA1280895. Also, Reports are taking lots of time for downloading. Also, confirm from where you are getting Planned transit time for our shipments? is it from Shipping line directly?. so the planned transit is the up to date based on the shipments?. also, i am trying to download ICC oil recap report since 12.18pm but still its not working'. ok. yes. DJA1291809 - please confirm the status of this shipment urgently. as per online tracking shipment already arrived at Banjul on JAN-25"
+        },
+        {
+          "role": "agent",
+          "message": "Allow me some time, I will check and update you shortly. Okay sure, allow me some time. Sure, I will reach out to you via email. Okay sure. I will check this and will update you via email. As per my check, the shipment with the tracking numbers you mentioned is being updated in line with the carrier's database. Currently, only the estimated arrival date has been updated by the carrier. The actual arrival status has not yet been marked as \"arrived\" on their end. As a result, the platform continues to reflect the estimated date of arrival, and the actual arrival date has not been captured yet. Would you like to mark these shipments are arrived on 11-Apr-2025? Also, we noticed your concern regarding reports taking a long time to download. As per my check, the platform is currently functioning normally. May I please know which specific report you were trying to download and approximately how long it took? It would be helpful if you could try downloading the report again and share a short screen recording or video of the issue. This will help us investigate further and assist you more. Yes, we are fetching the information directly from the carrier's database, as we are integrated with them. May I get an video of the whole window ? so the planned transit is the up to date based on the shipments? Yes. are we connected? As per my check, notifications have been enabled for your profile. However, since no notification was sent, I have requested our tech team to investigate the issue. I will convert this conversation into a support ticket and keep you updated with any progress. PLEASE IGNORE THE PREVIOUS MSG SENT. Are we connected>? Sure, Allow me some time I'll check and update you accordingly. I checked tracking number DJA1291809 and found that there are multiple shipments associated with this tracking number, Vessel Arrival at Banjul was on 20th Jan. Which is also reflected on our platform."
+        }
+      ]
+    },
+    {
+      "id": "conv36",
+      "customer_issue": "probable_delay",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Need help with my existing tracking. B/L number: EID0859986. the shipment is showing probable delay although as per CMA the goods are still due in next week. Is this because there's no departure confirmation on CMA's tracking ? If so, is there a way to override this please?. Hi Deep I have an issue tracking a shipment under /L number: EID0859986. the shipment is showing probable delay although as per CMA the goods are still due in next week. Is this because there's no departure confirmation on CMA's tracking ? If so, is there a way to override this please?. It had been entered under number FCIU7257290. I called CMA who have advised that it has departed and that their tracking will not be updated, is there a way that we can override the system to show departure? Hi Deep, I understand that the tracking piggy backs off of the carrier's website but there must be a way that we can make a manual entry surely"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me to check your BL number EID0859986. Have you added this tracking on our platform? I am unable to find your tracking number EID0859986 on our platform. I have found it. You added the tracking with the container number FCIU7257290. As I have checked and found that as per carrier CMA CGM origin departure was planned on 29th march however CMA CGM has not yet confirmed that this event has been completed or not. Due to this our platform is showing as probable delay of 24 days. Sorry this is not possible, As our system is integrated with carrier CMA CGM that's why data gets directly fetched and updated from their website. I will check with our tech team to confirm whether this is possible and will update you via email accordingly."
+        }
+      ]
+    },
+    {
+      "id": "conv37",
+      "customer_issue": "tracking_not_working",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "good morning. I appreciate your assistance. The following Master BL No. vessel is not being tracked. The tracking information is displayed on the SITC site. Please check this issue. SITGTXTK535483 SITC site https://ebusiness.sitcline.com/#/topMenu/vesselMovementSearch"
+        }
+      ]
+    },
+    {
+      "id": "conv38",
+      "customer_issue": "due_date_inquiry",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "WHSU 505044 3. When is it due?. WHSU 505044 3. Ok"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me some time to check this. As per carrier Aladin Express for tracking no WHSU5050443 there is no data available. Please cross check the tracking number and carrier name and edit the shipment accordingly."
+        }
+      ]
+    },
+    {
+      "id": "conv39",
+      "customer_issue": "data_mismatch",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Ple check GID: 250331CXSV. units Type and unit price. not match. ok. I'm going to check. I check in Quote not maะchs Bill vendor upload. not match. units Type and unit price."
+        },
+        {
+          "role": "agent",
+          "message": "Can you please elaborate on the query that you are facing for this GID number?. Okay, Allow me some time will look into this and update you shortly. Allow me to check and get back to you. Now the charges are matched. can you check for unit type and unit price and the container numbers which are not parsed , we have raised the issue to the tech. Did you check?. Let me check that for you. Please allow me some time i will check for this. In this case, the Unit type and unit price is showing according to the uploaded invoice Please refer screenshot for the same"
+        }
+      ]
+    },
+    {
+      "id": "conv40",
+      "customer_issue": "change_approval_matrix",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Changing confirm matrix. rashidz@my.beyonics.com"
+        },
+        {
+          "role": "agent",
+          "message": "Do you wish to change the approval matrix?"
+        }
+      ]
+    },
+    {
+      "id": "conv41",
+      "customer_issue": "report_generation",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "hi my query is related to report generation. i wnat to generate full year 24-25 total enquiry raised by company, how much confirmed, total bid received and how much i saved on each enquiry. can i connect on call. my number is 9022903480 from krishna antioxidants. thanks in advance"
+        },
+        {
+          "role": "agent",
+          "message": "Yes sure, please allow me some time, I will call you on 7045356067. Okay I will call you on 9022903480 shortly."
+        }
+      ]
+    },
+    {
+      "id": "conv42",
+      "customer_issue": "call_request",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "sakshi.sawant@laxmi.com. can you please call me. i need to assistance"
+        },
+        {
+          "role": "agent",
+          "message": "Please wait we will connect with you. We tried reaching you at +91-8879098448, but were unable to connect. Please feel free to call me back at +91-7977290501."
+        }
+      ]
+    },
+    {
+      "id": "conv43",
+      "customer_issue": "bulk_rate_upload_error",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "roshan.padhye@rrglobal.com. hi. there is error while Bulk Rate upload ?. All other details are uploaded properly even product details are uploaded but in multiple time Like some enq reflect same product 156 time some 100 times some 8 times. * File attached - RR-Global-SPOT-Enquiry-Bulk-Upload.xlsx *. uploaded excel sheet ?. no issue. i want to make some changes in Uploaded enq can I edit it does it effect your work ?. ok. did you find the glitch?. ok thaks. no thanks for your time and support. ok sure"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please elaborate on the error?. can you share Screenshot?. please share excel sheet. yes, the sheet that you uploaded. Okay, Thank you. Allow me some time, I'll check this and will update you shortly. Allow me a few minutes to check on the issue. Yes you can make changes in the uploaded enquiries, for that follow the steps: 1. Log in to your account and go to GoProcure Spot/Contract 2. on the left side you \"Create Spot?\" Option. Besides it there are 3 dots, click on the 3 dots. A drop down will open. 3. Select \"Upload Bulk Updation\" option, download the excel sheet. 4. Open the excel sheet and fill up the inquiry numbers with their details in which you want to make changes. Refer screenshots. Also regarding your previous query where the products are mentioned more than 100 times, I have raised it with the tech team. It needs tech attention. As soon as I get update from the team I will update you via email. Apart from this is there anything else, that I can help you with? I will be glad to provide assistance!. Thanks for the confirmation. I will keep you posted regarding the query via mail. I will close this conversation for now. Please re-open this chat for any other queries?. I would appreciate it if you could rate and provide feedback about my support experience for this conversation, It'll brighten my day and inspire me to grow?."
+        }
+      ]
+    },
+    {
+      "id": "conv44",
+      "customer_issue": "missing_destination_port",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "albert.s@biomedglobal.com. Hello Anjali. I cannot find Kuala Lumpur in destination port field Yet, it is can be found as origin port. Air. Kuala Lumpur International Airport. It is there in the \"Origin Port\" field, I want the exact port in \"Destination Port\". Yes. still not there. Ok, I will be on the line waiting. Alright, hear from you soon That's all from me"
+        },
+        {
+          "role": "agent",
+          "message": "is this an Air shipment or Sea Shipment?. which port in Kuala Lumpur you are looking for?. Kuala Lumpur International Airport , Kuala Lumpur, Malaysia, KUL - is this the port?. Type in KUL in POD. Allow me some time, I am looking into this. Thank you!. I will raise this with our tech team, and as soon as there's any update regarding the same, I'll notify you accordingly. Via email. Thanks for the confirmation. I will close this conversation for now. Please re-open this chat for any other queries?. I will reach out to you via email. I would appreciate it if you could rate and provide feedback about my support experience for this conversation, It'll brighten my day and inspire me to grow?."
+        }
+      ]
+    },
+    {
+      "id": "conv45",
+      "customer_issue": "incorrect_shipment_mode",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "importair@gminternational.net250203214S. 250203214S this order is on ocean dpt instead of air, I cannot find it. airimport@gminternational.net"
+        },
+        {
+          "role": "agent",
+          "message": "How may I help you?. Please share your query or concern so that I can assist you accordingly. Please allow me a moment to check this. May I know the email id you are using to login to the platform while searching for the enquiry. The enquiry number you have provided is incomplete. Can you please check the number?. Please reply so that I can assist you"
+        }
+      ]
+    },
+    {
+      "id": "conv46",
+      "customer_issue": "rate_card_upload_issue",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "hanah.hanh@hellmann.com. Hello, I can not upload my rate card, I tried so many times but still can not. Unexpected Error Occurred. omtasia@hellmann.com. can you help to upload the file on our behalf? * File attached - Fcl-Rate-Upload - R2 - V1.0.xlsx *. okay. all 483 lanes as the file I sent u. thanks for your support"
+        },
+        {
+          "role": "agent",
+          "message": "Can you elaborate more on the query. Can you please provide a clear screenshot this one is blur. Okay. Allow me some time. I will check and update you shortly. Can you please provide a registered email id?. Thank you. Allow me some time. I'm viewing the issue now, I'll update you shortly. Thanks for your patience. I would like to know that do you want to upload all the 484 inquires on the platform or only few are required as of now on priority?. Okay, Got it. I will get it uploaded from the backend. It should get uploaded in some time or else I'll update you regarding the same via email. Apart from this do you need any further help?. Currently Inland Haulage Time (in Days) is mentioned as \"0\" in many enquiries which is not acceptable on platform. Is it okay if we mention \"1\" instead?"
+        }
+      ]
+    },
+    {
+      "id": "conv47",
+      "customer_issue": "unable_to_process_quote",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "siriwan@transpeed.biz. i can't get into process quote of Polyplex please kindly help me to fix this problem"
+        }
+      ]
+    },
+    {
+      "id": "conv48",
+      "customer_issue": "report_request",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "hi. I need a report from march till today how many enquires came and how much we DSV quoted and how many we lost and how many we won 2025 or help me how we can take the report its for my customer Sunpharma for exports. sure. from March 1st 2025 till April 16 2025. I tried but not able to get it can you please share it on my email id beena.nair@dsv.com. thank you. may i know whom i am talking to. ok thank you Deep please share me the report"
+        },
+        {
+          "role": "agent",
+          "message": "Okay please allow me to check. Select the time range for which you want to download the report, and then submit the request. Then click on download report and vendor enquiry report. Okay sure. It is Deep here from gocomet. Sure, Thank you."
+        }
+      ]
+    },
+    {
+      "id": "conv49",
+      "customer_issue": "create_dispatch_issue",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I AM UNABLE TO CREWATE NEW DISPATCH TO SUBMIT INVOICE. I AM UNABLE TO CREATE NEW DISPATCH. OK"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please share the GID number and a screenshot if you are facing any error?. Please allow me a moment to check this. For GID 250414DQ4D, please note that the client is yet to create the dispatch."
+        }
+      ]
+    },
+    {
+      "id": "conv50",
+      "customer_issue": "invoice_upload",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Dear All, DB GROUP need to upload another invoice. How should they proceed? Ref.: 24005321OC10 . Thanks."
+        },
+        {
+          "role": "agent",
+          "message": "Allow me some time, I'll check and update you. In this 24005321OC10, the invoice is approved, so first, this invoice 2501273YS2 needs to be rejected from your side Then the vendor needs to add the invoices, in below step"
+        }
+      ]
+    },
+    {
+      "id": "conv51",
+      "customer_issue": "carrier_not_accepted",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "CARRIER NAME : VIET JET NOT ACCEPTING SYSTEM. is is offline carrier. airlines only provide tracking. 978-22442475. * File attached - 978.pdf *. * File attached - NOK AWB.pdf * SAM ISSUE NOK AIR ALSO. it is offline carriers airline not provide tracking link direct they only provide tracking after airlift the cargo"
+        },
+        {
+          "role": "agent",
+          "message": "The carrier Viet Jet Airways is not integrated on our platform yet. To add it on the platform, we need the tracking link and few BL numbers/BL documents of this carrier to review and proceed accordingly. For this airline to be added on the platform, we need the tracking link and AWB numbers. Without tracking link, we won't be able to integrate it on the platform. Can you share the AWB document as well?. I will check if tracking link is available for the carrier. Please allow me a moment to check this. If tracking links are available for these carriers, please share the same. Without tracking link, we won't be able to add the carrier on the platform. As per our telephonic discussion, regarding the carrier to be selected to submit the step, I will communicate with our tech team and update you via email"
+        }
+      ]
+    },
+    {
+      "id": "conv52",
+      "customer_issue": "lcl_invoice_upload_issue",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "hello. for LCL i have a problem with this can't upload invoice next. thx. ok. noted"
+        },
+        {
+          "role": "agent",
+          "message": "Allow me to check and get back to you. To streamline communication, let's close this chat and continue our conversation over email. As per my check, the shipment details for tracking number SHLCH25222532J, which you added under the workflow for GID 250311KYD5. Once you added the tracking information, the tracking was created on the client's side. However, the shipment has not received any updates from the carrier for the past 30 days. As a result, it has moved to \"Action Required\" status. Kindly request the client to mark the shipment as completed by entering the Gate Out date on their end in the platform on GoTrack. Once this is done, the error will be cleared, and you will be able to upload the invoice copy."
+        }
+      ]
+    },
+    {
+      "id": "conv53",
+      "customer_issue": "eta_discrepancy",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hello , i would like to confirm is the estimate time showing for container number TXGU7510175 is updated since i have checked on other application and it was showing arrival time 20/05/25 instead of what showing here 13/05 , can you please help me"
+        }
+      ]
+    },
+    {
+      "id": "conv54",
+      "customer_issue": "eta_inquiry",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Need help with my existing tracking. TML/86557/JKT/0325. Hello can you inform to me when ETA this shipment. ppjk.jkt@ironbirdlogistics.com"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please share your email? Thank You. Please allow me some time to check. As I can see, you're not registered on our platform. However, you can use our container tracking feature for free, with up to three trackings, without any registration. Simply enter your container number or BL number along with the carrier name at the following link: https://www.gocomet.com/online-container-tracking and you will be able to track it."
+        }
+      ]
+    },
+    {
+      "id": "conv55",
+      "customer_issue": "account_deletion",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "how can i delete my account?. can i delet my account'"
+        },
+        {
+          "role": "agent",
+          "message": "Hello, I understand you're considering deactivating your account. Could you kindly share the reason for this decision? We value your feedback and would appreciate any suggestions for improvement. Your free account includes 6 monthly trackings and remains available. Additionally, if you just wish to stop receiving platform notifications, you can do so, please select the option below to view the steps. Please select an option to move forward : . As requested please find the steps to deactivate the account below : 1. Go to the link: [GoComet - #1 Enterprise Software for Freight Negotiation]. 2. Click on \"Request for Removal of Personal Data.\" 3. A pop-up will appear, allowing you to choose the reason for deactivating the account. Select any option and submit. 4. Once submitted, the account will be deactivated. Please note: If you only wish to stop the notifications, please select the option below to get the details"
+        }
+      ]
+    },
+    {
+      "id": "conv56",
+      "customer_issue": "status_not_updated",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "xahamamud7@gmail.com What's problem one Months ago arrived not update"
+        }
+      ]
+    },
+    {
+      "id": "conv57",
+      "customer_issue": "vessel_name_request",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "trarimeyriham@gmail.com Hello can you share with me the name of the vessel that carries my shipment B\\L BEAU515801-7"
+        }
+      ]
+    },
+    {
+      "id": "conv58",
+      "customer_issue": "shipment_location_request",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Guyatom22261@gmail.com I bought goods from turkey This is the invoice number 689080 This is the container number CMAU0017754 Can you please help me to locate it. ASL SHIPPING COMPANIE. Ok thank you please help me"
+        }
+      ]
+    },
+    {
+      "id": "conv59",
+      "customer_issue": "account_deletion_platform_difficulty",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Close my account I don't want this garbage. I don't have time for this. I'm not smart as you geeks so just close it. I'm outta here. I don't care anymore. Goodbye not doing all that bullshit. Worst user-friendly thing I've ever would've imagined and used in my life"
+        },
+        {
+          "role": "agent",
+          "message": "may I know if you are facing any issues while using the platform?. Steps to deactivate the account - 1. Go to link - GoComet - #1 Enterprise Software for freight Negotiation 2. Click on \"Request for removal of personal data\" - 3. Select any option and submit - NOTE - This will deactivate your account and stop all the notifications only if you click on \"Submit\". could you kindly state your issue? I am here to assist you. I can understand your frustration, but I will highly appreciate if you can share your issue with me. which feature were you unable to use as I can check you have still not added any tracking on the platform."
+        }
+      ]
+    },
+    {
+      "id": "conv60",
+      "customer_issue": "tracking_package",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "lashondanubia88@gmail.com I need help tracking a package my transaction id is 22X35978f9305942."
+        }
+      ]
+    },
+    {
+      "id": "conv61",
+      "customer_issue": "interpret_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Need help with my existing tracking. 21702688571 - This MAWB. sachin.kenjoor@ppgasianpaints.com. Hello. I am using Gocomet to track few Shipments and also in future will take paid version if we find this suitable for our need. Need Help for 2 points. How to interprete the status as I am bit confused?. I am tracking 2 Shipments : 1) MAWB # 217-0268 8571 : This is Air Shipment. 2) GESU3884764 : This is container no for Sea SHipment. sachin.kenjoor@ppgasianpaints.com. Yes I have added the shipments. OK"
+        },
+        {
+          "role": "agent",
+          "message": "Are you registered with the platform? If yes can you provide registered email id. Also, have you added this trackings on the platform?. Thank you, Allow me some time I'll look into this and update you shortly,. Can you please provide me the tracking numbers?. Your Shipment GESU3884764 has departed from the Transhipment - HongKong International Terminals (Hit) on 18th March, 2025. All the milestones after that are yet to be updated by the carrier line website. Your MAWB 217-0268 8571 has arrived at Chennai International Airport, MAA on 31st March, 2025. Here is the detail update on your shipment with AWB number 21702688571: The shipment was gated in at Incheon International Airport (ICN) on 29 March 2025 at 03:49 PM. It departed from ICN on 30 March 2025 at 09:35 AM via flight TG0659. The package arrived in Bangkok (BKK) for transshipment on 30 March 2025 at 01:25 PM. It then departed from BKK on 30 March 2025 at 10:10 PM via flight TG0337. The shipment successfully arrived at Chennai International Airport (MAA) on 31 March 2025 at 12:01 AM. The delivery status is still pending, and we are awaiting further updates."
+        }
+      ]
+    },
+    {
+      "id": "conv62",
+      "customer_issue": "bulk_upload",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "how to upload multiple shipments at once. i cant get bulk uploads to work. is that wrong ?. yes moment. do i feed the container number in that wor colum and the rest i leave blank ?. is colum a the correct place for the data?. this i downloaded. * File attached - tracking-upload-lite.xlsx *. i cant download it. can you email it to me please or generate a download link if i click it i get and error. NB@i-lnk.net. ty. let me know once you send it please"
+        },
+        {
+          "role": "agent",
+          "message": "To upload multiple shipments at once, please follow these steps: 1. Log in to your account. 2. Go to \"GoTrack\". 3. On the left hand side you will see the \"Bulk Upload\" Option. 4. Click on it, a Dialogue box will pop up. Click on the \"Trackings Import Template\" button to download the Excel file. Always download a fresh bulk upload Excel template while using the \"Tracking Bulk Upload\". 5. Fill the Excel template with the required data. 6. The system will check for any errors present in the file. If there is any error, the system will help you identify the errors. Once the errors are identified, you can rectify those errors and re-upload the file. 7. Once the file is completely error-free, you will see all the shipments from the Excel sheet uploaded on the platform. Can you please elaborate more on your issue?. What issue are you facing while Bulk Uploading?. As you can see there's a error message shown that INCORRECT EXCEL SHEET HAS BEEN UPLOADED. Please follow the steps given above, download the excel templated and feed in the details and then upload. Can you please share the excel sheet that you uploaded on the platform?. The screenshot that you have shared of the excel sheet is the wrong format of the excel. Can you please download the excel sheet from the platform?. the excel sheet looks like this, you have to feed data here. Can you please share the sheet. excel sheet not the screenshot. Give me a moment, I'll check it. Thanks for waiting patiently. I'm sending you an excel sheet, fill it up and upload on the platform. If you face issue again please share the screenshot of the error. * File attached - ocean-air-courier-tracking-upload (1).xlsx *. Download this sheet and feed up all the details, then upload it on the platform. Let me know if it worked or not. Okay, I'll mail it to you. Until Then, I'll resolve the chat here, and please reach me out via mail or chat as per your convenience once you upload the excel sheet on the platform. sure."
+        }
+      ]
+    },
+    {
+      "id": "conv63",
+      "customer_issue": "map_not_visible",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "i can't see the map. No. plz. hi. i have bought the plan of business but my session keeps giving me like trial i can't see map also. management.bureau21@hotmail.com. plz. np, the picture just for reference. mmm... okay could i will consult our IT guy. question is this a new interface update?. ok please. just please update me with the trial issue progress via email. thx a million"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please share your registered email id?. Please allow me a moment to check this. I'm checking it. Please give me a few minutes. Okay. Map view is available for the tracking number ZIMUGZH0496652 on the platform. For your reference, I have attached a screenshot below. And regarding the trial period being shown on your account, I will communicate it to our tech team. No there hasn't been any interface update. Kindly check the browser you are using as the map view is available on the platform. Is there anything else I can assist you with?. Yes, I will convert this chat conversation into an email thread and will update you accordingly after I receive information from the tech team."
+        }
+      ]
+    },
+    {
+      "id": "conv64",
+      "customer_issue": "shipment_location",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Shahid_2097@yahoo.co.in Need to see which place ship reached"
+        }
+      ]
+    },
+    {
+      "id": "conv65",
+      "customer_issue": "bol_movement",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "samrichardsonsr10@icloud.com 249774666 Has this bill of lading moved"
+        }
+      ]
+    },
+    {
+      "id": "conv66",
+      "customer_issue": "track_package",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I want to track my package"
+        }
+      ]
+    },
+    {
+      "id": "conv67",
+      "customer_issue": "check_arrival_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Can i check the arrival for this bl number COAU7257980340"
+        },
+        {
+          "role": "agent",
+          "message": "Regarding the bl number COAU7257980340, I can see that you have not added this tracking on the platform, to know the arrival status you first need to add the tracking on the platform to track and monitor status, to add tracking on the platform please follow these steps: 1. Log in to the platform - https://www.gocomet.com/login using your registered email id. 2. Go to \"GoTrack\". 3. On the left hand side, click on \"Add Shipment\" and enter the mandatory fields and after filling up the details click on \"Submit Button\". This is how you can add the shipment on the platform. Related article: https://gocomet.freshdesk.com/a/solutions/articles/43000626200?portalId=43000006477"
+        }
+      ]
+    },
+    {
+      "id": "conv68",
+      "customer_issue": "shipment_location",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I don't know the current location of the ship."
+        }
+      ]
+    },
+    {
+      "id": "conv69",
+      "customer_issue": "container_delay",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Kamrankerri@mail.ru GAOU6098425 container What is the reason for container delay? Kingston -- Jamaica > Poti -- Georgia. What date will the ship depart?. Please answer."
+        }
+      ]
+    },
+    {
+      "id": "conv70",
+      "customer_issue": "package_location",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I don't know where is my mail. Where is my package"
+        },
+        {
+          "role": "agent",
+          "message": "As I see, you have not added any tracking on out platform, to track your mail, please follow these steps: 1. Log in to the platform - https://www.gocomet.com/login with your registered mail ID. 2. Go to \"GoTrack\", on the elect hand side there's an option of \"Add Shipment\", click on it and fill up all the mandatory fields and click on the \"Submit\" button. Your tracking will get added on the platform. This is how you can track and monitor your shipments. Refer screenshots:"
+        }
+      ]
+    },
+    {
+      "id": "conv71",
+      "customer_issue": "unknown",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "shikdersobuj9@gmail.com"
+        }
+      ]
+    },
+    {
+      "id": "conv72",
+      "customer_issue": "container_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "alikagogia6@gmail.com Hello, is my container empty?"
+        }
+      ]
+    },
+    {
+      "id": "conv73",
+      "customer_issue": "view_previous_shipment",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "taboendjimek@protonmail.com This is not my shipment, my previous shipment from before arrival antwerp, where can i see this?"
+        }
+      ]
+    },
+    {
+      "id": "conv74",
+      "customer_issue": "package_not_delivered",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "gyasi2004@gmail.com it said a package was coming at a certain time but i don't see my package"
+        }
+      ]
+    },
+    {
+      "id": "conv75",
+      "customer_issue": "track_package",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "oslec360@gmail.com how to track my package? plsease notify me. its about 1 month now"
+        }
+      ]
+    },
+    {
+      "id": "conv76",
+      "customer_issue": "track_container",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "maulananurlila@gmail.com apakah saya bisa minta tolong melacak posisi konteiner TEGU2895590"
+        }
+      ]
+    },
+    {
+      "id": "conv77",
+      "customer_issue": "access_rates",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "m.rizwan@almarwan.com Hello, i need access to your rates"
+        }
+      ]
+    },
+    {
+      "id": "conv78",
+      "customer_issue": "package_pickup",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "juancarlosaavedra.01@gmail.com Kiero saber si tengo un pakete por recojer en Perú lima"
+        }
+      ]
+    },
+    {
+      "id": "conv79",
+      "customer_issue": "package_not_delivered",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hello. I want to know why is my package not delivered. CARMEN Y RIVERA 2039 SHORE BLVD. #3B ASTORIA NY 11105 9405872850811078059531 That is the tracking number. No problem have a great day"
+        },
+        {
+          "role": "agent",
+          "message": "How can I help you?. I understand. However Please note that GoComet is a logistics software platform that provides real-time shipment tracking, procurement automation, freight rate management, and complete supply chain visibility. However, we do not handle or manage shipments directly. However you can track your shipment via our platform. In order to track , please log in to our platform then add the tracking number and carrier name under quick add section as highlighted in the below screenshot. Once you update the tracking number along with the carrier name, our platform will fetch the tracking details from the shipping line's website. The shipment updates will then be reflected on our platform accordingly."
+        }
+      ]
+    },
+    {
+      "id": "conv80",
+      "customer_issue": "no_tracking_info",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "How are you. My container suppose to arrive Lagos but no info. MSNU9783606 ajaxclemzy@gmail.com. No new updates the last update was April 10th the vessel was last seen in Valencia Spain"
+        },
+        {
+          "role": "agent",
+          "message": "I'm good. Thank you for asking. How can I help you?. I see you marked the conversation as not helpful. Please share your query or concern so that I can assist you. May I know your email id? Please share the container number as well. Please allow me a moment to look into this. Please note that for the container MSNU9783606 (EBKG11344412), the shipping line MSC has not provided any further updates other than the departure from Valencia, ES on 10 April 2025. This is why no new updates are available on the platform. Since we track shipments in integration with the carrier, we can only show the details once they're available on the carrier's website."
+        }
+      ]
+    },
+    {
+      "id": "conv81",
+      "customer_issue": "export_advice",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "gmmunguu@gmail.com Hello My name is Munguu Few months ahead, I will export some goods from Japan to Mongolia and I need some advice from your service. Goods are pharmaceutical goods. Thanks in advance"
+        }
+      ]
+    },
+    {
+      "id": "conv82",
+      "customer_issue": "shipment_loaded_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Need help with my existing tracking. COSU6411126730. ds.chemicals@gmail.com is our shipment load in vessel?"
+        },
+        {
+          "role": "agent",
+          "message": "Allow me some time, I;ll check and update you shortly. Status of tracking number COSU6411126730 - The shipment is now en route to Karachi, with an estimated arrival date of May 26, 2025. The cargo is expected to be available for pickup at the destination on June 1, 2025. Tracking number is up to date as per the website (Refer Screenshots). Yes, we are pleased to confirm that your shipment under tracking number COSU6411126730 has been successfully loaded onto the vessel XIN LIAN YUN GANG. The container departed from the transshipment port FOS, France on April 20, 2025 at 12:39 PM CEST."
+        }
+      ]
+    },
+    {
+      "id": "conv83",
+      "customer_issue": "cancel_subscription",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "how do i cancel my subscription"
+        },
+        {
+          "role": "agent",
+          "message": "Hello, I understand you're considering deactivating your account. Could you kindly share the reason for this decision? We value your feedback and would appreciate any suggestions for improvement. Your free account includes 6 monthly trackings and remains available. Additionally, if you just wish to stop receiving platform notifications, you can do so, please select the option below to view the steps. As requested please find the steps to deactivate the account below : 1. Go to the link: [GoComet - #1 Enterprise Software for Freight Negotiation]. 2. Click on \"Request for Removal of Personal Data.\" 3. A pop-up will appear, allowing you to choose the reason for deactivating the account. Select any option and submit. 4. Once submitted, the account will be deactivated. Please note: If you only wish to stop the notifications, please select the option below to get the details"
+        }
+      ]
+    },
+    {
+      "id": "conv84",
+      "customer_issue": "tracking_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "ECMU7638669"
+        }
+      ]
+    },
+    {
+      "id": "conv85",
+      "customer_issue": "tracking_status_update_failed",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: NAM7203744 Reported Error: Hi, please help to close this case. It keeps showing failed no matter what I do, please advise"
+        },
+        {
+          "role": "agent",
+          "message": "Allow me to check the issue related to tracking update and get back to you."
+        }
+      ]
+    },
+    {
+      "id": "conv86",
+      "customer_issue": "tracking_status_discrepancy",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: WHSU0045790 Reported Error: Could you please update statuts? POL: Mundra POD: Puerto Quetzal ETS: 21/04/2025 ETD: 07/06/2025 Vessel: WAN HAI Voyage: 611 E076 Transhipment port: NINGBO. yes. thanks"
+        },
+        {
+          "role": "agent",
+          "message": "Hi Alexandre, We have received your error report on tracking no WHSU0045790. Please allow me some time to check. As I can see for tracking no WHSU0045790 currently there is no data available on carrier CMA CGM. Hi Alexandre, Apologies for the delay. Please ignore my last message. I have checked and found that for tracking no WHSU0045790 you have selected carrier as Wan Hai Lines and in Wan Hai Lines POL is mentioned as Mundra however our platform is suggesting that POL mundra does not match with carrier's POL NINGBO I've raised this issue with our tech team, and they're investigating it on priority. I'll keep you updated via mail as soon as I receive any further information."
+        }
+      ]
+    },
+    {
+      "id": "conv87",
+      "customer_issue": "tracking_not_available",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking container not available. No. I added new container to track and I faced same problem of long time processing. Should be 24 hours maximum to get the info I need the information now. LMCU9113893. Last time your team promised me to finish the tracking process in 24 hours And should be automatically. Why each time adding container I should contact the technical. Waiting. Ok"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please share the tracking number?. Please allow me a moment to look into this. The tracking number LMCU9113893 is in Processing status on the platform. I apologize for the inconvenience caused. I will communicate with our tech team regarding the update of this shipment. I can understand your situation and is extremely sorry for the inconvenience this is causing you. I will check this on priority and will provide you an update shortly. Thank you. I will update you via email once this shipment is updated on the platform. Thank you"
+        }
+      ]
+    },
+    {
+      "id": "conv88",
+      "customer_issue": "shipment_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "hi. i wanted to know the shipment status of BL#DJA1281157. ok. why it not reflecting ?. ok thank you"
+        },
+        {
+          "role": "agent",
+          "message": "How Can I help you?. Okay, Please allow me some time to check this. For BL no DJA1281157, As per the carrier CMA CGM shipment has reached at POD Banjul on 5th of april, but the same is not getting reflected on our platform. I have raised this issue with our tech team they are investigating this on priority. As soon as I have more information I will update you the same. I will share the further communication via email, will that be fine with you?"
+        }
+      ]
+    },
+    {
+      "id": "conv89",
+      "customer_issue": "tracking_status_not_updated",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hello, Please check the status of this shipment now the status not update and the vessel departure since 19/04 . OK,. Why is this section not updated?. OK. Thank you ka."
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me some time to check. For tracking number LCHSHJ25012051, There is an issue as tracking details are available on carrier but same is not reflected. I have raised this to our tech team they are actively looking for it. As soon as I have more information i will update you the same. For tracking number BKK500411700 also I have raised to tech team as there seem some glitch on platform due to which the milestones from the list view is not showing latest updates. Our tech team is actively working on this as soon as I have more information I will update you the same via email."
+        }
+      ]
+    },
+    {
+      "id": "conv90",
+      "customer_issue": "gate_out_date_not_reflecting",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: IAAU2932826 Reported Error: SHIPMENT RECEIVED"
+        },
+        {
+          "role": "agent",
+          "message": "For tracking number IAAU2932826 as per carrier gate out date is available but the same is not getting reflected on our platform. I have raised this issue with our tech team. As soon as I have more information I will inform you the same via email"
+        }
+      ]
+    },
+    {
+      "id": "conv91",
+      "customer_issue": "missing_gated_out_and_empty_return_dates",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Why can't we see Gate out and Empty return like we used to be able. I'm wanting to know why we can't see the Gated out and Empty return dates like we used to. please copy Laura Sallisky - lsallisky@bayshorefilmsllc.com"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me a moment to check this. I will check this with our team and update you accordingly. I will convert this conversation into an email and will provide further updates via email. Okay. Thank you for the confirmation. Have a nice day. Bye"
+        }
+      ]
+    },
+    {
+      "id": "conv92",
+      "customer_issue": "tracking_not_updated",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "HELLO CHETAN I M FACING PROBLEM WITH TRACKING IN LOTS OF CONTAINER MOSTLY IN CMA HAPAG AND SCI LINE. CAIU6975778. TRACKING IS NOT UPDATED AS PER SHIPPING LINE. TTNU8307352. OK. THIS IS THE ORIGNAL TRACKING ON HAPAG WEBSITE. THERE ARE LOTS OF EROR IN MY TRACKING NOT FOR ONLY THIS SHIPPMENT THERE ARE LOTS OF SHIPMENT I CANT WORK LIKE THIS SZLU9855057 / 40 TTNU8307352 / 40 BMOU9641347 / 40 TRIU8897778 / 40 TEMU9264822 / 40 BMOU9714952 / 40 AMCU9404475 / 40 SZLU9931408 / 40 CRLU3164483 / 20 CGMU5547499 / 40 TEMU9824779 / 40 TCLU1361963 / 40 TTNU8918515 / 40 CAIU5561691 / 40 CXRU1314357 / 40 SEKU9132383 / 40 CGMU5156112 / 40 CGMU7504069 / 40 CGMU6550141 / 40 CGMU9357748 / 40 TTNU8840778 / 40 FBIU5081451 / 40 FBIU5078381 / 40 FBIU5105234 / 40 SEKU9252671 / 40 TCLU1207351 / 40 CGMU5314178 / 40 CGMU5383477 / 40 CGMU5221727 / 40 TEMU9437105 / 40 MSDU2651001 / 20 TCLU1354244 / 40 TCLU1330073 / 40 TRIU8389648 / 40 MRLU3162460 / 20 MSBU8195684 / 40 CGMU5423482 / 40 TLLU5212293 / 40. LOTS OF MORE NUMBER ARE PENDING HOW I CAN WORK WITH YOU PLASE ARRANGE A CALL I WANA TALK TO YOUR SUPPORT TEAM. call me. 9811898915 at any time. DO IT ON PRIORITY I HAVE TO SUBMITTED THE DEATILS IN COMPANY BEFORE CLOSING"
+        },
+        {
+          "role": "agent",
+          "message": "May I know the tracking number and the issue you are facing?. May I know the issue?. Allow me to check the tracking information for the shipment CAIU6975778 and get back to you in a few minutes. YES. May I have all the shipment numbers where you are facing the issue?. I am myself from the support team. May I know suitable time to set the meeting? Meanwhile I will check all the tracking numbers provided by you. As I have rechecked the tracking information for shipment CAIU6975778, I want to inform you that the shipment has now been updated as per the carrier database. Additionally, the discharge event is not related to the gate-out event. I want to inform you that we have reviewed all the tracking numbers you provided and have informed our tech team to investigate why the ETA for these shipments was not updated. They are actively looking into the issue, and we will update you as soon as we have more information. I have also informed your Key Account Manager, Harsh Goyal, to connect with you and give you a call to discuss the issue in detail. I understand the urgency, and I sincerely appreciate your patience. Our tech team is actively working on this as a priority, and we will update you as soon as we receive an update."
+        }
+      ]
+    },
+    {
+      "id": "conv93",
+      "customer_issue": "bulk_upload_processing_time",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "my upload file has been processing almost an hour but still not done can stop it ?. is bulk upload i dont have any tracking. * File attached - 20250325 Gocomet data sub.xlsx *. it cant be that long it definitely get hang somewhere. is there a way to stop it from my end"
+        },
+        {
+          "role": "agent",
+          "message": "can you please share your tracking number?. Okay, Please allow me some time to check. Can you please share the file here on chat?. As you have entered 228 tracking here thus the system is checking duplicate entries, I would request you to kindly wait. Okay please allow me some time to check. You can minimize it but the system will continue working in the background to find duplicates."
+        }
+      ]
+    },
+    {
+      "id": "conv94",
+      "customer_issue": "bulk_upload_initializing",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "w.vanginkel@daarnhouwer.nl HI we do a bulk upload but it is initializing for hours . How can we stop it ?. thx. * File attached - ocean-air-courier-tracking-upload (63).xlsx * im still here. no not possible. i have now this. ok"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me a moment to check this. I'm checking this now. Can you try uploading again? Please share the excel file you are trying to upload. Please reply so that I can assist you. Were you able to upload the file?. Okay. I will communicate this with our tech and will inform you as soon as I receive further information from them. I will convert this chat conversation into an email thread and will provide you further updates via email. Thank you for the confirmation. Have a nice day!"
+        }
+      ]
+    },
+    {
+      "id": "conv95",
+      "customer_issue": "tracking_not_updated",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "NBOZ6U504600. bom dia amrutha tudo bem? preciso de ajuda com esse tracking, no site do armador já temos a data efetiva de embarque porém o tracking não buscou essa data ate agora. thank you. any time to update this information?. for information only. thanks good day!"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me a few minutes to check the tracking number NBOZ6U504600. I can see that the origin departure date has not been updated on the platform. I will raise this to our tech team. I will convert this conversation into an email thread and will update you via email at the earliest. Thank you. Have a good day!"
+        }
+      ]
+    },
+    {
+      "id": "conv96",
+      "customer_issue": "container_location",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "023500004277. Hi. freebrown2@gmail.com. I'm just trying to checking the location of the container. ok. Ok thank you ?"
+        },
+        {
+          "role": "agent",
+          "message": "May I know your email id?. Kindly use the following link to track your shipment : https://www.gocomet.com/online-container-tracking. I can see that you have signed up on the platform and have added the tracking number 023500004277 already. May I know if you are having any query or concern?. Please allow me a moment to check this. The shipment 023500004277 has departed from transshipment port KAOHSIUNG (TW) on 26 March 2025 and is expected to arrive at DAVAO (PH) on 01 April 2025. The details have not been updated on the platform as per the carrier Evergreen. I have communicated with our tech team and will update you as soon as the tracking number is updated. Is there anything else I can assist you with?"
+        }
+      ]
+    },
+    {
+      "id": "conv97",
+      "customer_issue": "eta_request",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hi, I need latest ETA of these shipments, but ot seems the career eta is no updated rom the career end , can you please help OOLU0622953 CSLU1493476. no issues. kindly update on email , as i have somethinfg urgent come up , so need to cancel the chat. Thanks again"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me some time to check. Okay sure."
+        }
+      ]
+    },
+    {
+      "id": "conv98",
+      "customer_issue": "tracking_not_working",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "ryosaku.hiwatashi@zenport.io. Hello again. SITRLCTK448810 SITGLCOS443020 BLs are not tracked while the shippers site displays. Could you check these?. Thank you Could you reply to email?. Sorry. by email. Thank you. I will wait for your email. Thank you. Have a good day."
+        },
+        {
+          "role": "agent",
+          "message": "Sure, Please allow me some time to check. yes. We will update you over email regarding the query. we will drop a email on \" ryosaku.hiwatashi@zenport.io \""
+        }
+      ]
+    },
+    {
+      "id": "conv99",
+      "customer_issue": "pol_discrepancy",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Tracking Number: OOLU4347464 Reported Error: On the BL, Port of Loading showing Los Angeles. Hi. yes, container number. I want to know the reason of discrepancy， for our future reference. it was there but now it is gone but i have the screenshot here. 1. I want to know the reason of POL discrepancy,for our future reference I want to know why it is showing differently on your screen and mine.. When I raise the conversation, a few minutes ago yes, now it has gone as I said I want to know the answers for my above 2 questions :). Thank you :) if it is a GoComet thing, please look into it and make sure such problem will not happen again. Yes, please email to me. would you be able to send this conversation to my email?. thank you!"
+        },
+        {
+          "role": "agent",
+          "message": "Is OOLU4347464 the tracking number?. Can you share the screenshot?. As I have checked the tracking number OOLU4347464 is already marked completed on the platform. Can you share the screenshot of the platform where the message to change the POL is shown?. Is the platform still showing the message to change the POL?. Please allow me a few minutes to look into this. For your first question \"I want to know the reason of POL discrepancy, for our future reference\", I will communicate this with our tech team and will update you accordingly. And regarding your second question, \"I want to know why it is showing differently on your screen and mine.\" - There is no difference as the POL discrepancy is not displayed on the platform anymore. Yes definitely. I have informed the tech team regarding the POL discrepancy. Can I convert this conversation into an email thread?. I will convert this chat conversation into an email thread shortly and will update you via email to jia@barrow-lane.co.uk. Thanks for the confirmation. I will close this chat conversation for now. Have a great day!"
+        }
+      ]
+    },
+    {
+      "id": "conv100",
+      "customer_issue": "shipment_processing_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hello. Please let us know why KSL-1149-2425 (MLIIN009451) is still in processing?. Okay. The entry of this shipment was made on the platform on 28 Mar. Ok Thank you. No Thank you"
+        },
+        {
+          "role": "agent",
+          "message": "Okay, Allow me some time I will look into this and provide you with an update shortly. The carrier handling this shipment is a P2-rated carrier, which means tracking updates typically take 12-24 hours to reflect and will take some time to reflect on the platform. This is a standard response time for carriers with this rating. I will anyway raise this with the tech team as well, and as soon as I get any Update I will reach to you via email with the resolution. Yes, I have checked it on our platform, As I mentioned earlier I'm going to raise this with the tech team and as soon as there's resolution, I will reach out to you via email. Great. Apart from this is there anything I can help you with?. Thanks for the confirmation. I will close this conversation for now. As soon as I get an update on this query I will reach out to you via email. I would appreciate it if you could rate and provide feedback about my support experience for this conversation, It'll brighten my day and inspire me to grow?. Have a nice day!"
+        }
+      ]
+    },
+    {
+      "id": "conv101",
+      "customer_issue": "tracking_issues",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Hello I used the report error function earlier to report some issues on my current trackings. I'm not sure if you have received them.. HASLC02250300233 HASLC02250300334 These two trackings we are getting repeated Busan events with strange dates that go back in time (arrival event earlier than departur) could you take a look. Also the other issue is on SNKO190250202448. The port mapped is simply wrong, it should be JPMIZ (Mizushima port in Japan), current GoComet has to as Bermuda.. I have reported on: HASLC02250300233 HASLC02250300334 SNKO190250202448. thank you. and also the connected port for Trans Shipment Departure HUTCHISON PORTS BUSAN on SNKO190250202448 is also incorrect, it should be KRPUS. KRPUS for Busan, currently it's giving Swedish port"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please share the tracking numbers for which you have reported error?. I have noted all your queries. Allow me some time to check all the trackings that you have mentioned, As soon as I get the resolution I'll update you shortly. Okay. Let me check. I have checked with the backend that you have already reported query for these 3 trackings - HASLC02250300233 HASLC02250300334 SNKO190250202448 As soon as I receive any resolution on these raised errors I'll update you via email. You have already mentioned all the issues that you are facing in these shipments in the error reported, right?. We are marking this conversation as resolved. Will update you via email regarding the error raised. Kindly share your valuable feedback with us and help us improve our support services. Thank you and have a nice day"
+        }
+      ]
+    },
+    {
+      "id": "conv102",
+      "customer_issue": "eta_inquiry",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "hosam2121988@gmail.com BSIU9855540 تاريخ الوصول المتوقع الي ليبيا متي هل هذا صحيح"
+        }
+      ]
+    },
+    {
+      "id": "conv103",
+      "customer_issue": "tracking_details_not_showing",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "yuka.takahashi@loloirugs.com I would like to track some containers which have already been in GoComet, but tracking details haven't shown up yet. I have 3 containers.. BSIU9312012 TRKU4450829 TRKU4481100. Okay thank you !. Noted, thanks for your helo help. you too!"
+        },
+        {
+          "role": "agent",
+          "message": "Can you please share the tracking numbers? I will look into them. Please allow me a few minutes to review the tracking numbers. All the three tracking numbers are currently in processing status. I will inform this to our tech team. I will convert this conversation into an email thread and will keep you updated via email.  Thank you for contacting us. Have a great day, Bye!"
+        }
+      ]
+    },
+    {
+      "id": "conv104",
+      "customer_issue": "tracking_processing_status",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Please let me know why KSL-1185-2425 (MLIIN009668) is still in processing?. Okay. Ya it;s more than 24 hours right. Okay. No, Thank you"
+        },
+        {
+          "role": "agent",
+          "message": "Okay, Allow me some time, I'll look into this and update you accordingly. Okay, so I just checked and found that tracking number MLIIN009668 was added on 2nd April and is a P2-rated carrier, , may take up to 24 hours to update on our platform. Yes, I'll raise it with our tech team for further investigation. As soon as I get an update regarding the same, I'll notify you via email. Apart from this is there anything else, that I can help you with? I will be glad to provide assistance!. Thanks for the confirmation. I will close this conversation for now. Please re-open this chat for any other queries?. I'll reach out to you with an update via email. I would appreciate it if you could rate and provide feedback about my support experience for this conversation, It'll brighten my day and inspire me to grow?."
+        }
+      ]
+    },
+    {
+      "id": "conv105",
+      "customer_issue": "tracking_error",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "ryosaku.hiwatashi@zenport.io. Hello. I would like to track BL:350510028774, but it says \"Carrier systems are facing some issues.\". Could you tell me what is happening. Thank you. I will wait for your email."
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me some time to check. For your tracking no 350510028774, there is no data available on carrier TS line. I am sorry, I have found the tracking on TS line now. I have raised this issue with our tech team, and they are currently investigating it. I will get back to you as soon as I receive any further updates. Sure, Thank you for your patience and understanding. I will communicate further updates via email."
+        }
+      ]
+    },
+    {
+      "id": "conv106",
+      "customer_issue": "shipment_delayed",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "WE NEED A LETTER WITH EXPLANATION OF IT. WHO CANPROVIDE THIS FORMAL EXPLANATION ?. HELLO GOOG DAY ! I LOOKIG THAT CNTR MSMU5995558 IS DELAYED 21 DAYS ??? WHY ?"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me a moment to check this tracking number. The carrier MSC has updated the expected time of arrival for this shipment as 20 April 2025. I have noticed that it has not been updated on the platform. I will communicate this to our tech and get the shipment updated as per the details provided by the carrier. Please reply so that I can assist you"
+        }
+      ]
+    },
+    {
+      "id": "conv107",
+      "customer_issue": "trial_end_date",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "cj@jbweld.com. hello, curious why my screen says my trails ends on 3/31 and kindly subscribe before that.,... we already pay for this platform can you please double check on this trial... not trail. It should have been made on 1/17 i believe. can you confirm that payments are up to date and that i will not lose access on 3/31?. Got it, thanks. sure"
+        },
+        {
+          "role": "agent",
+          "message": "Please allow me a moment to check this. May I know when the last payment was done?. Okay. I will communicate this with our tech team and will update you regarding the same. Is there anything else I can assist you with?. I will check this with our tech team and will update you via email about it at the earliest. Can I now convert this chat conversation into an email thread?. Thanks for the confirmation. I will close this conversation for now. Have a nice day!"
+        }
+      ]
+    },
+    {
+      "id": "conv108",
+      "customer_issue": "create_consignee_error",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "ali.mughal@pladisglobal.com Hi Nilima, I am trying to create a consignee but it is giving back error as it already exists as client and cannot be added as consignee.. I don't think they are there before in user/client. shaima.basahal@pladisglobal.com. Yes. ok. Pladis Arabia Food Manufactures Co.. Yes. ok. ok. S5550010. ok"
+        },
+        {
+          "role": "agent",
+          "message": "ok yes when some email has been added as client on GoComet then that email can not be added as consignee in this case if possible you can add another email of that person as consignee does that person have another eamil email. can you share the email which you are trying to add. so do you want this email added as consignee right?. Please allow me some time i will check. May i know for which consignee compnay do you want to add this as user. as i need to raise a request to tech to migrate this user to consignee ok this compnay has not been created under consginee right. ok so please allow me some time i will raise a request for migration from sure to consignee and i will send the details on email about the same is this ok. can you please share the unique ID for Pladis Arabia Food Manufactures Co. this company. ok thank you i will raise the request for this"
+        }
+      ]
+    },
+    {
+      "id": "conv109",
+      "customer_issue": "login_issue",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "mary@asmaraholdings.com Good Morning. i forgot password and try to send link to my email but am not receiving any link or otp. yes. yes. pls. yes. several times tried. no use. hi Anjali. Any update?. ok. hellooo. ok. bye or send me link through email"
+        },
+        {
+          "role": "agent",
+          "message": "Good Morning! Is this the mail id you used to log in? And where the otp or link should be sent? Allow me some time to check. If you are unable to login, please follow the below steps. Forgot Password Step 1- Click on 'Forgot Password' to change the password Step 2 – You will be redirected to 'Forgot Your Password?' Page Enter your Registered E-Mail Id and click on 'Receive Link' Once you click on receive link, you will receive an automated mail from GoComet to reset your password. (Note: Please check your spam box, if you haven't received your mail) Step 3 – Click on the link received on the registered E-Mail Id Step 4 – Input the 'New password' and ensure it by 'Confirm Password'. Click on the 'Set password' button. Have you followed these steps? Have you checked your spam/junk box? Can you try doing all the steps of resetting password again? Okay allow me some time. Please allow me few minutes I'm checking this. Hello Mary. I am currently checking the issue, there indeed seems to be an issue. Allow me some time, I'll revert you via email. I hope it works with you? I checked and its not happening, I might need to raise It with the tech team."
+        }
+      ]
+    },
+    {
+      "id": "conv110",
+      "customer_issue": "eta_request_login_issue",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Yes can give the ETA of our shipment already sent the container number to gomet. ASLU5009572. Alligator Shipping Company LLC. Could not get through to the above page ?. Do you understand English?. Dear the Gomet page is struck at verifying the OTP send for logging the Tracking page of Gomet Alligator Shipping company LLC"
+        }
+      ]
+    },
+    {
+      "id": "conv111",
+      "customer_issue": "multi_leg_tracking",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I'm tracking a multi-leg shipment and it seems to be stuck at the transshipment port"
+        },
+        {
+          "role": "agent",
+          "message": "For multi-leg shipments, updates at transshipment ports can sometimes be delayed. Could you share the tracking number so I can check its current status?"
+        },
+        {
+          "role": "customer",
+          "message": "CMAU3245678"
+        },
+        {
+          "role": "agent",
+          "message": "I've checked CMAU3245678. Your container is currently at Singapore port waiting for the connecting vessel. Sometimes carriers don't update transshipment status immediately. Our system shows the next vessel is scheduled to depart on the 15th. You can view the full schedule on your dashboard under the route tab for this tracking."
+        },
+        {
+          "role": "customer",
+          "message": "Is there a way to get alerts for each leg of the journey?"
+        },
+        {
+          "role": "agent",
+          "message": "Yes, you can set up milestone alerts for each leg. Go to your tracking, click the three dots, select 'Notification Settings' and enable alerts for 'Departure from Transshipment Port' and 'Arrival at Transshipment Port'. Would you like me to walk you through setting this up?"
+        }
+      ]
+    },
+    {
+      "id": "conv112",
+      "customer_issue": "technical_error_handling",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I'm getting a technical error when trying to download the Invalid Report: 'Network Error: Failed to fetch'"
+        },
+        {
+          "role": "agent",
+          "message": "This network error usually indicates a connection issue. First, please try refreshing your browser. If that doesn't work, try clearing your browser cache or using a different browser. Is this happening consistently or just started recently?"
+        },
+        {
+          "role": "customer",
+          "message": "It just started today and I've tried refreshing already"
+        },
+        {
+          "role": "agent",
+          "message": "Let me check if there are any known system issues. In the meantime, could you try an alternative approach? Go to Reports > All Reports > select 'Invalid Shipments' from the dropdown. This uses a different API endpoint and might work. If that also fails, I can generate the report for you and send it via email."
+        },
+        {
+          "role": "customer",
+          "message": "That worked! Thanks"
+        },
+        {
+          "role": "agent",
+          "message": "Great! I'm glad that worked. The main download button might be experiencing temporary issues. Our tech team has been notified. Is there anything specific you're looking for in the Invalid Report that I can help with?"
+        }
+      ]
+    },
+    {
+      "id": "conv113",
+      "customer_issue": "format_correction_walkthrough",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I'm trying to add a container but keep getting format errors"
+        },
+        {
+          "role": "agent",
+          "message": "Container numbers should follow the format of 4 letters followed by 7 digits (like MSCU1234567). Could you share what you're trying to enter so I can help identify the issue?"
+        },
+        {
+          "role": "customer",
+          "message": "I'm entering 'MSC 396784E'"
+        },
+        {
+          "role": "agent",
+          "message": "I see the issue. 'MSC 396784E' doesn't follow the required format. Container numbers typically use 4 letters (not 3) and 7 digits (no letters). Also, there shouldn't be spaces. For Mediterranean Shipping Company (MSC), containers usually start with 'MSCU' or 'MEDU'. Could this be a booking reference rather than a container number?"
+        },
+        {
+          "role": "customer",
+          "message": "It might be. The shipping line gave me this as my 'container reference'"
+        },
+        {
+          "role": "agent",
+          "message": "This sounds like a booking reference or Bill of Lading number. Try this: In the tracking form, enter 'MSC396784E' (without spaces) and select 'MSC' as the carrier. If this is a booking reference, it may link to actual container numbers once in our system. If you have a document from MSC, look for a number that starts with 4 letters and has 7 digits - that would be your container number."
+        }
+      ]
+    },
+    {
+      "id": "conv114",
+      "customer_issue": "complex_tracking_workflow",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "We're a new customer with a complex tracking workflow. We need to track 50+ containers weekly across multiple carriers but also need our internal reference numbers associated with each tracking."
+        },
+        {
+          "role": "agent",
+          "message": "For your complex tracking needs, I recommend using our bulk upload feature with custom reference fields. Have you downloaded our Excel template yet? It includes a 'Reference No.' column where you can add your internal references."
+        },
+        {
+          "role": "customer",
+          "message": "Yes, but we also need to track by purchase order and have different teams access different containers"
+        },
+        {
+          "role": "agent",
+          "message": "Perfect, our system can handle that. In the template, use the 'Reference No.' field for purchase orders. For team-specific access, use column K for 'Customer unique code' and column M for 'Share With' to specify team codes. Would you like me to email you detailed instructions with screenshots for setting up these team codes and visibility rules?"
+        },
+        {
+          "role": "customer",
+          "message": "That would be great. Can we also get email alerts for specific events to different teams?"
+        },
+        {
+          "role": "agent",
+          "message": "Absolutely. Each team member can customize their notification preferences in their profile settings. For team-wide notifications, your admin can configure alert rules for specific milestones. I'll include email alert setup instructions in my email. Could you share the email address where I should send this information?"
+        }
+      ]
+    },
+    {
+      "id": "conv115",
+      "customer_issue": "premium_feature_inquiry",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "Do you offer any premium tracking features? We need more detailed milestone tracking and customized reports."
+        },
+        {
+          "role": "agent",
+          "message": "Yes, we offer several premium features for enhanced tracking. These include: 1) Custom milestone tracking beyond standard events, 2) Automated custom reports scheduled to your email, 3) Advanced analytics dashboards, and 4) API integration for your systems. Would you like me to connect you with your account manager to discuss these options?"
+        },
+        {
+          "role": "customer",
+          "message": "What about container location mapping? Is that available?"
+        },
+        {
+          "role": "agent",
+          "message": "Yes, our premium package includes real-time container location mapping with route visualization. This feature shows your containers' current positions on a map and their historical routes. For vessels at sea, we update positions approximately every 6 hours using AIS data. Would you like to see a demo of this feature?"
+        },
+        {
+          "role": "customer",
+          "message": "Yes, that would be helpful"
+        },
+        {
+          "role": "agent",
+          "message": "Great! I'll arrange for your account manager to schedule a demo of our real-time mapping features. They'll reach out within one business day to set this up. Is there a specific date/time that works best for your team to view this demo?"
+        }
+      ]
+    },
+    {
+      "id": "conv116",
+      "customer_issue": "account_blocked_escalation",
+      "exchanges": [
+        {"role": "customer", "message": "I can't login"},
+        {"role": "agent", "message": "Are you unable to login due to an error, or do you need help with your email or password?"},
+        {"role": "customer", "message": "I get a message suggesting my account is blocked"},
+        {"role": "agent", "message": "Your account appears to be blocked. I will escalate this to our support team and create a ticket for you. Please provide your email address so we can follow up."},
+        {"role": "customer", "message": "user@example.com"},
+        {"role": "agent", "message": "Thank you. I've created a support ticket for your blocked account. Our team will contact you at user@example.com as soon as possible. Is there anything else I can help you with regarding your login issue?"}
+      ]
+    },
+    {
+      "id": "conv20",
+      "customer_issue": "correct_format_invalid_tracking",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I can't track my container MSCU1234567, it says tracking is invalid"
+        },
+        {
+          "role": "agent",
+          "message": "I understand your container MSCU1234567 is showing as invalid, even though the format is correct (4 letters followed by 7 digits). This typically happens for one of these reasons: 1) The container isn't in MSC's database yet (future shipment), 2) There might be a carrier mismatch, or 3) This could be a booking reference rather than a container number. Did you select MSC as the carrier when adding this tracking?"
+        },
+        {
+          "role": "customer",
+          "message": "Yes I selected MSC"
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for confirming. Since you selected the correct carrier but it's still showing as invalid, this likely means the container MSCU1234567 is not yet in MSC's database. This commonly happens with future shipments. I recommend editing the shipment to add a dispatch date or estimated departure date - this tells our system it's a future shipment and prevents it from being marked invalid. Alternatively, if you have a Bill of Lading number, try tracking with that instead as it might be recognized earlier in their system."
+        },
+        {
+          "role": "customer",
+          "message": "How do I add a dispatch date?"
+        },
+        {
+          "role": "agent",
+          "message": "To add a dispatch date: 1) Find your shipment on the dashboard, 2) Click the 'More' option to the right of the tracking, 3) Select 'Edit', 4) In the popup modal, enter a future date in the 'Factory Dispatch Date' field, and 5) Click 'Submit'. This tells our system it's a future shipment that hasn't started yet."
+        }
+      ]
+    },
+    {
+      "id": "conv21",
+      "customer_issue": "initial_tracking_issue",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "I can't track my shipment"
+        },
+        {
+          "role": "agent",
+          "message": "What specific issue are you encountering when trying to track your shipment? Are you seeing an error message, or is there no data available?"
+        },
+        {
+          "role": "customer",
+          "message": "It says tracking is invalid"
+        },
+        {
+          "role": "agent",
+          "message": "Could you please share the tracking number you're trying to track? This will help me identify the specific issue and provide the most relevant solution."
+        },
+        {
+          "role": "customer",
+          "message": "MSCU7364555"
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for providing the container number MSCU7364555. I see this is an MSC container. The 'invalid tracking' message usually appears for one of these reasons: 1) The container isn't in MSC's database yet (future shipment), 2) The wrong carrier was selected, or 3) There's a mismatch between the container number and what's in the carrier's system. Could you confirm which carrier you selected when adding this tracking?"
+        }
+      ]
+    },
+    {
+      "id": "conv22",
+      "customer_issue": "outdated_data",
+      "exchanges": [
+        {
+          "role": "customer",
+          "message": "My container data is not updating"
+        },
+        {
+          "role": "agent",
+          "message": "I understand you're seeing outdated information. Could you please share the container number that's not updating?"
+        },
+        {
+          "role": "customer",
+          "message": "MSCU8765435"
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for providing MSCU8765435. This is an MSC container which is a P1 carrier that typically updates every 3-6 hours. When did you add this container to your tracking dashboard?"
+        },
+        {
+          "role": "customer",
+          "message": "Yesterday morning"
+        },
+        {
+          "role": "agent",
+          "message": "Since it's been more than 24 hours for an MSC container, this is definitely a synchronization issue. Our system should have refreshed the data several times by now. I'll prioritize this for immediate refresh. Would you like me to set up automatic notifications for when this container's data is updated?"
+        }
+      ]
+    }
+  ]
+} 
