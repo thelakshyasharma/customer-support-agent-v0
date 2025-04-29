@@ -1,0 +1,82 @@
+{
+  "user_id": "user123",
+  "timestamp": "2025-04-28T21:24:25.161069",
+  "conversation": [
+    {
+      "user": "i can't track my shipment",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "i can't track my shipment",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "I can't track my shipment",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "f",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "fd",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "f",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "f",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "f",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "f",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "f",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "f",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "f",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "Hi I can't track my shipment",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "i can't track my shipment",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "i can;t track my shipment",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "I can't track my shipment",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "I can't track my shipment",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "Hi",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    },
+    {
+      "user": "Hi",
+      "agent": "I'm sorry, I encountered an error while processing your request. Please try again or contact support if the issue persists."
+    }
+  ]
+}

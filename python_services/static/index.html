@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support Chat</title>
+  <style>
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; 
+      background: #f4f6fb; 
+      margin: 0; 
+      color: #333;
+    }
+    .chat-container { 
+      max-width: 600px; 
+      margin: 40px auto; 
+      background: #fff; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+      padding: 24px; 
+    }
+    .messages { 
+      min-height: 350px; 
+      max-height: 500px; 
+      overflow-y: auto; 
+      margin-bottom: 20px; 
+      padding: 10px;
+    }
+    .msg { 
+      margin: 16px 0; 
+      padding: 10px 16px;
+      border-radius: 8px;
+      max-width: 80%;
+      word-wrap: break-word;
+    }
+    .msg.user { 
+      text-align: right; 
+      margin-left: auto;
+      background: #e7f0ff;
+      color: #0056b3; 
+    }
+    .msg.agent { 
+      text-align: left; 
+      margin-right: auto;
+      background: #f7f7f9;
+      color: #333; 
+    }
+    .msg.agent p {
+      margin: 8px 0;
+    }
+    .msg.agent ul, .msg.agent ol {
+      margin: 8px 0;
+      padding-left: 24px;
+    }
+    .msg.agent li {
+      margin: 4px 0;
+    }
+    .msg.agent strong {
+      font-weight: 600;
+    }
+    .msg.agent a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    .msg.agent a:hover {
+      text-decoration: underline;
+    }
+    form { 
+      display: flex; 
+      gap: 8px; 
+    }
+    input[type=text] { 
+      flex: 1; 
+      padding: 12px 16px; 
+      border-radius: 8px; 
+      border: 1px solid #ddd; 
+      font-size: 16px;
+    }
+    button { 
+      padding: 12px 24px; 
+      border: none; 
+      border-radius: 8px; 
+      background: #2b7cff; 
+      color: #fff; 
+      font-weight: bold; 
+      cursor: pointer; 
+      font-size: 16px;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background: #1a6dff;
+    }
+    button:disabled { 
+      background: #b3b3b3; 
+    }
+  </style>
+  <!-- Add the Marked.js library for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Customer Support Chat</h2>
+    <div class="messages" id="messages"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script>
+    const messagesDiv = document.getElementById('messages');
+    const form = document.getElementById('chat-form');
+    const input = document.getElementById('user-input');
+    let userId = 'webuser_' + Math.random().toString(36).slice(2, 10);
+
+    // Send initial greeting when page loads
+    window.onload = async () => {
+      addMessage('Hi', 'user');
+      try {
+        const res = await fetch('/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: 'hi', user_id: userId })
+        });
+        const data = await res.json();
+        addMessage(data.response, 'agent', true);
+      } catch (err) {
+        addMessage('Error contacting agent.', 'agent', false);
+      }
+    };
+
+    function addMessage(text, sender, parseMarkdown = false) {
+      const msg = document.createElement('div');
+      msg.className = 'msg ' + sender;
+      
+      if (sender === 'agent' && parseMarkdown) {
+        // Convert markdown to HTML and sanitize
+        msg.innerHTML = marked.parse(text);
+      } else {
+        msg.textContent = text;
+      }
+      
+      messagesDiv.appendChild(msg);
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
+
+    form.onsubmit = async (e) => {
+      e.preventDefault();
+      const text = input.value.trim();
+      if (!text) return;
+      
+      // Disable the input and button while processing
+      input.disabled = true;
+      form.querySelector('button').disabled = true;
+      
+      addMessage(text, 'user');
+      input.value = '';
+      
+      const loadingMsg = document.createElement('div');
+      loadingMsg.className = 'msg agent';
+      loadingMsg.textContent = 'Thinking...';
+      messagesDiv.appendChild(loadingMsg);
+      
+      try {
+        const res = await fetch('/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text, user_id: userId })
+        });
+        const data = await res.json();
+        
+        // Remove loading message
+        messagesDiv.removeChild(loadingMsg);
+        
+        // Add the response with markdown parsing
+        addMessage(data.response, 'agent', true);
+      } catch (err) {
+        // Remove loading message
+        messagesDiv.removeChild(loadingMsg);
+        addMessage('Error contacting agent.', 'agent', false);
+      } finally {
+        // Re-enable the input and button
+        input.disabled = false;
+        form.querySelector('button').disabled = false;
+        input.focus();
+      }
+    };
+  </script>
+</body>
+</html> 

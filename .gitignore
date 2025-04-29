@@ -172,3 +172,60 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+python_services/venv/
+python_services/env/
+python_services/.env
+python_services/*.env
+python_services/.pytest_cache/
+python_services/.coverage
+python_services/htmlcov/
+
+# Ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+backend/.env
+backend/.bundle/
+backend/log/
+backend/tmp/
+backend/vendor/bundle/
+
+# Node/React
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
